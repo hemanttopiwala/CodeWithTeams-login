@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Textform from "./components/Textform";
 
 
 
@@ -9,8 +10,10 @@ function App() {
               
 
         <Navbar title="Hemant Blog" aboutText="About Textutils"/>
-        <Navbar />
 
+        <div className="container my-3">
+          <Textform heading="Enter the text to analysis"/>
+        </div>
 
        
         
