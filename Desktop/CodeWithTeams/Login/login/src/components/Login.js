@@ -1,10 +1,16 @@
-import React from 'react'
+import React , {useState} from 'react';
+
 
 export default function Login() {
+
+    const [mystyle,setmystyle]=useState({
+        
+        backgroundColor:'#a44949'
+    });
     return (
         <>
-        <div className="limiter">
-        <div className="container-login100">
+        <div className="limiter" >
+        <div className="container-login100" style={mystyle}>
           <div className="wrap-login100">
             <form className="login100-form validate-form">
               <span className="login100-form-title p-b-26">
@@ -12,6 +18,8 @@ export default function Login() {
               </span>
               <span className="login100-form-title p-b-48">
                 <i className="zmdi zmdi-font"></i>
+                
+                
               </span>
 
               <div className="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
@@ -52,24 +60,24 @@ export default function Login() {
         </div>
       </div>
 
-<div id="dropDownSelect1"></div>
-	
+        <div id="dropDownSelect1"></div>
+        
 
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
-	<script src="vendor/animsition/js/animsition.min.js"></script>
+        <script src="vendor/animsition/js/animsition.min.js"></script>
 
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-	<script src="vendor/select2/select2.min.js"></script>
+        <script src="vendor/select2/select2.min.js"></script>
 
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+        <script src="vendor/daterangepicker/moment.min.js"></script>
+        <script src="vendor/daterangepicker/daterangepicker.js"></script>
 
-	<script src="vendor/countdowntime/countdowntime.js"></script>
+        <script src="vendor/countdowntime/countdowntime.js"></script>
 
-	<script src="js/main.js"></script>  
+        <script src="js/main.js"></script>  
 
     </>
     );
